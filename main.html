@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель сервисов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53); /* Градиент фона как на изображении */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 колонок */
+  grid-gap: 20px; /* Отступы между элементами */
+  width: 90%;
+  max-width: 1200px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.grid-item br {
+  margin: 5px 0;
+}
+</style>
+
+
+<body>
+  <div class="grid-container">
+    <a href="https://www.tbank.ru/mybank/" style="text-decoration: none;"> 
+	<div class="grid-item"><img src="https://avatars.mds.yandex.net/get-shedevrum/14826033/profile_img_ea1c6105025c11f0ae705ed548576bb1/orig" alt="Т-Банк"><br>Т-Банк</div> </a>
+    
+	<a href="https://web.alfabank.ru/dashboard" style="text-decoration: none;">
+	<div class="grid-item"><img src="https://i.pinimg.com/236x/08/ff/66/08ff6673989068ba87abee5cd294280f.jpg?nii=t" alt="Альфа банк"><br>Альфа банк</div> </a>
+	
+	<a href="https://web5.online.sberbank.ru/main" style="text-decoration: none;">
+    <div class="grid-item"><img src="https://avatars.mds.yandex.net/i?id=80045d098ba9cd9e0ecbafc1d6da0712_sr-4828361-images-thumbs&n=13" alt="Сбербанк"><br>Сбербанк</div></a>
+	
+
+    <div class="grid-item"><img src="?.png" alt="?"><br>?</div>
+    <div class="grid-item"><img src="?.png" alt="?"><br>?</div>
+    <div class="grid-item"><img src="?.png" alt="?"><br>?</div>
+
+  </div>
+</body>
+</html>
